@@ -6,7 +6,10 @@ function getText() {
      return res.text();
     })
     .then((data) => {
-      console.log(data)
+      console.log(data);
+      let output = document.getElementById('output');
+      output.innerHTML = data;
+
     })
     .catch(function(err){
       console.log(err);
